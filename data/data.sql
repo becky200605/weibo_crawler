@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    content TEXT NOT NULL,
+    keyword TEXT NOT NULL
+    tags TEXT NOT NULL,
+    sentiment INT NOT NULL
+    key_words TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS keywords(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url TEXT NOT NULL,
+    ranking INT NOT NULL,
+    keyword TEXT NOT NULL
+);
